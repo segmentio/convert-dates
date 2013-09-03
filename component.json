@@ -1,0 +1,15 @@
+{
+  "name": "convert-dates",
+  "repo": "segmentio/convert-dates",
+  "version": "0.0.1",
+  "license": "MIT",
+  "description": "Convert all Date instances in an object.",
+  "keywords": ["date", "convert", "object"],
+  "dependencies": {
+    "ianstormtaylor/is": "0.0.5"
+  },
+  "development": {
+    "component/assert": "*"
+  },
+  "scripts": ["index.js"]
+}
