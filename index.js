@@ -21,5 +21,6 @@ function convertDates (obj, convert) {
   for (var key in obj) {
     var val = obj[key];
     if (is.date(val)) obj[key] = convert(val);
+    if (is.object(val)) convertDates(val, convert);
   }
 }

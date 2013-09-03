@@ -24,4 +24,10 @@ it('should pass value to converter', function () {
   });
 });
 
+it('should convert nested dates', function () {
+  var obj = { nested: { date: new Date() }};
+  convert(obj, function () { return 'string'; });
+  assert(obj.nested.date == 'string');
+});
+
 });
