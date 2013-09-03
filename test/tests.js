@@ -10,6 +10,12 @@ it('should convert dates', function () {
   assert(obj.date == 'string');
 });
 
+it('should convert nested dates', function () {
+  var obj = { nested: { date: new Date() }};
+  convert(obj, function () { return 'string'; });
+  assert(obj.nested.date == 'string');
+});
+
 it('shouldnt convert other properties', function () {
   var obj = { number: 42 };
   convert(obj, function () { return 'string'; });
@@ -22,12 +28,6 @@ it('should pass value to converter', function () {
   convert(obj, function (val) {
     assert(date == val);
   });
-});
-
-it('should convert nested dates', function () {
-  var obj = { nested: { date: new Date() }};
-  convert(obj, function () { return 'string'; });
-  assert(obj.nested.date == 'string');
 });
 
 });
