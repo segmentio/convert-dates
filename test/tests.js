@@ -6,27 +6,27 @@ var assert = require('assert')
 
 it('should convert dates', function () {
   var obj = { date: new Date() };
-  convert(obj, function () { return 'string'; });
-  assert(obj.date == 'string');
+  var clone = convert(obj, function () { return 'string'; });
+  assert(clone.date == 'string');
 });
 
 it('should convert nested dates', function () {
   var obj = { nested: { date: new Date() }};
-  convert(obj, function () { return 'string'; });
-  assert(obj.nested.date == 'string');
+  var clone = convert(obj, function () { return 'string'; });
+  assert(clone.nested.date == 'string');
 });
 
 it('shouldnt convert other properties', function () {
   var obj = { number: 42 };
-  convert(obj, function () { return 'string'; });
-  assert(obj.number != 'string');
+  var clone = convert(obj, function () { return 'string'; });
+  assert(clone.number != 'string');
 });
 
 it('should pass value to converter', function () {
   var date = new Date();
   var obj = { date: date };
   convert(obj, function (val) {
-    assert(date == val);
+    assert(date.getTime() == val.getTime());
   });
 });
 

@@ -13,7 +13,7 @@
 var convert = require('convert-dates');
 var obj = { date: new Date() };
 
-convert(obj, function (date) { return 'string'; });
+obj = convert(obj, function (date) { return 'string'; });
 
 obj.date; // "string"
 ```
