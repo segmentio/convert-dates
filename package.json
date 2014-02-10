@@ -1,12 +1,16 @@
 {
   "name": "convert-dates",
   "repository": "git://github.com/segmentio/convert-dates.git",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "license": "MIT",
   "description": "Convert all Date instances in an object.",
-  "keywords": ["date", "convert", "object"],
+  "keywords": [
+    "date",
+    "convert",
+    "object"
+  ],
   "dependencies": {
     "clone": "component/clone#0.1.0",
-    "is": "ianstormtaylor/is#0.1.0"
+    "is": "ianstormtaylor/is#0.1.1"
   }
 }
