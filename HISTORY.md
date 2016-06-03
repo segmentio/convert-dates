@@ -1,3 +1,7 @@
+1.0.0 / 2016-06-02
+==================
+
+  * Modernize test harness; Remove Duo support, add npm support
 
 0.1.1 - February 10, 2013
 -------------------------
