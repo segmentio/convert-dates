@@ -1,6 +1,6 @@
 {
   "name": "@segment/convert-dates",
-  "version": "1.0.2",
+  "version": "1.0.0",
   "description": "Convert all Date instances in an object.",
   "keywords": [
     "date"
