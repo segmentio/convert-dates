@@ -1,3 +1,10 @@
+
+1.1.0 / 2017-10-19
+==================
+
+  * Merge pull request #2 from segmentio/add-arrays
+  * removed ie 7 and 8 from circle
+  * Add arrays
 1.0.0 / 2016-06-02
 ==================
 
